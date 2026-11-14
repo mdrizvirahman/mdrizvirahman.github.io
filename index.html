@@ -21,7 +21,7 @@
   "@type": "Person",
   "@id": "https://mdrizvirahman.com/#person",
   "name": "Md Rizvi Rahman",
-  "alternateName": ["Rizvi Rahman Adit", "Rizvi Adit", "মোঃ রিজভী রহমান", "রিজভী রহমান অদিত"],
+  "alternateName": ["Rizvi Rahman Adit", "Rizvi Adit", "Adit", "মোঃ রিজভী রহমান", "রিজভী রহমান অদিত"],
   "url": "https://mdrizvirahman.com/",
   "image": "https://mdrizvirahman.com/md-rizvi-rahman.jpg",
   "description": "Md Rizvi Rahman (Rizvi Rahman Adit) is a Bangladeshi pianist, keyboardist, music producer and composer based in Dhaka.",
@@ -34,7 +34,7 @@
   "knowsLanguage": ["Bengali", "English", "Hindi"],
   "worksFor": { "@type": "Organization", "name": "Sound Hacker", "description": "Audio production house, Kakrail, Dhaka", "sameAs": "https://www.wikidata.org/wiki/Q142083053" },
   "memberOf": [
-    { "@type": "MusicGroup", "name": "Tahsan and The Band" },
+    { "@type": "MusicGroup", "name": "Tahsan and The Band", "sameAs": "https://www.wikidata.org/wiki/Q142168146" },
     { "@type": "MusicGroup", "name": "Ghuddy", "sameAs": "https://www.wikidata.org/wiki/Q142083052" },
     { "@type": "MusicGroup", "name": "Oishee Express" }
   ],
@@ -44,6 +44,7 @@
   ],
   "award": ["Best Music Producer, Composer & Pianist — Anando Mela (2025)"],
   "subjectOf": [
+    { "@type": "NewsArticle", "headline": "It is exciting to be able to come back to my own genre: Tahsan", "publisher": "The Daily Star", "datePublished": "2021-12-07", "url": "https://www.thedailystar.net/arts-entertainment/music/news/it-exciting-be-able-come-back-my-own-genre-tahsan-2912456" },
     { "@type": "NewsArticle", "headline": "Oyshee Live in Kuala Lumpur: Grand Preparations Underway", "publisher": "Daily Tribunal", "datePublished": "2026-04-19", "url": "https://www.dailytribunal24.com/oyshee-live-in-kuala-lumpur-grand-preparations-underway" },
     { "@type": "NewsArticle", "headline": "F-Minor releases new song", "publisher": "The Business Standard", "datePublished": "2020-01-03", "url": "https://www.tbsnews.net/entertainment/f-minor-releases-new-song" },
     { "@type": "NewsArticle", "headline": "Drama Emon Dine Tare Bola Jay — Tawsif and Urbi together for the first time", "publisher": "News24", "datePublished": "2025-10-27", "url": "https://www.news24bd.tv/details/248611" }
@@ -121,7 +122,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .35s,bo
 nav.solid{background:rgba(30,27,24,.94);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.25);border-color:#000}
 nav .wrap{display:flex;align-items:center;gap:26px;height:70px;max-width:1360px}
 .logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff;font-family:var(--mono);font-size:13px;letter-spacing:.32em;font-weight:500}
-.logo svg{width:24px;height:24px}
+.logo svg.pianologo{width:auto;height:38px;filter:drop-shadow(0 3px 6px rgba(0,0,0,.35));transition:transform .25s}
+.logo:hover svg.pianologo{transform:translateY(-1px) scale(1.03)}
+@media(max-width:600px){.logo svg.pianologo{height:32px}}
 .menu{display:flex;gap:24px;list-style:none;margin-left:auto}
 .menu a{text-decoration:none;color:rgba(255,255,255,.82);font-size:12px;letter-spacing:.14em;text-transform:uppercase;position:relative;padding:6px 0}
 .menu a::after{content:"";position:absolute;left:50%;bottom:-4px;width:5px;height:5px;border-radius:50%;background:var(--red);transform:translateX(-50%) scale(0);transition:.2s;box-shadow:0 0 8px var(--red)}
@@ -147,7 +150,9 @@ nav .wrap{display:flex;align-items:center;gap:26px;height:70px;max-width:1360px}
   linear-gradient(0deg,rgba(28,18,10,.85) 0%,rgba(28,18,10,0) 38%),
   linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 18%)}
 .hero .inner{position:relative;z-index:2;width:100%;padding:150px 0 70px}
-.hero .eyebrow{color:rgba(255,255,255,.78)}
+.hero .eyebrow{color:rgba(255,255,255,.85);font-size:14px;letter-spacing:.2em}
+.hero .eyebrow .led{width:9px;height:9px;margin-right:10px}
+@media(max-width:600px){.hero .eyebrow{font-size:12px;letter-spacing:.16em}}
 .hero h1{font-size:clamp(64px,10.5vw,152px);line-height:.9;letter-spacing:-.02em;margin:18px 0 22px}
 .hero h1 em{color:var(--honey)}
 .aka{font-size:18px;color:rgba(255,255,255,.88)}
@@ -584,8 +589,7 @@ section>.wrap{position:relative;z-index:1}
 <nav id="nav" aria-label="Main">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Md Rizvi Rahman, home">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="3" fill="none" stroke="#f5eee2"/><rect x="6" y="1" width="3" height="13" fill="#f5eee2"/><rect x="11" y="1" width="3" height="13" fill="#d9372f"/><rect x="16" y="1" width="3" height="13" fill="#f5eee2"/></svg>
-      RIZVI
+      <svg class="pianologo" viewBox="0 0 141 40" aria-hidden="true"><rect x="1" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="21" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="41" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="61" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="81" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="101" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="121" y="1" width="18.5" height="38" rx="2.5" fill="#f5eee2"/><rect x="14" y="1" width="14" height="25" rx="2" fill="#1a1715" stroke="#000" stroke-width=".6"/><text x="21" y="19" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#f5eee2">R</text><rect x="34" y="1" width="14" height="25" rx="2" fill="#1a1715" stroke="#000" stroke-width=".6"/><text x="41" y="19" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#f5eee2">I</text><rect x="74" y="1" width="14" height="25" rx="2" fill="#1a1715" stroke="#000" stroke-width=".6"/><text x="81" y="19" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#d9372f">Z</text><rect x="94" y="1" width="14" height="25" rx="2" fill="#1a1715" stroke="#000" stroke-width=".6"/><text x="101" y="19" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#f5eee2">V</text><rect x="114" y="1" width="14" height="25" rx="2" fill="#1a1715" stroke="#000" stroke-width=".6"/><text x="121" y="19" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#f5eee2">I</text></svg>
     </a>
     <ul class="menu">
       <li><a href="#play">Play</a></li>
@@ -940,6 +944,7 @@ section>.wrap{position:relative;z-index:1}
     <div class="head rv"><div><p class="eyebrow">In the news</p><h2>Press.</h2></div></div>
     <div class="press">
       <a class="rv" href="https://www.dailytribunal24.com/oyshee-live-in-kuala-lumpur-grand-preparations-underway" rel="noopener"><div class="src"><span>Daily Tribunal</span><span>19 Apr 2026</span></div><h3>Oyshee Live in Kuala Lumpur: grand preparations underway</h3><p>Oyshee and her band Oyshee Express headline HGH Convention Centre, Kuala Lumpur — line-up lists <b>Rizvi Rahman Adit on keyboards</b>.</p></a>
+      <a class="rv" href="https://www.thedailystar.net/arts-entertainment/music/news/it-exciting-be-able-come-back-my-own-genre-tahsan-2912456" rel="noopener"><div class="src"><span>The Daily Star</span><span>7 Dec 2021</span></div><h3>"It is exciting to be able to come back to my own genre": Tahsan</h3><p>Tahsan returns to band music with "Biyogantok", recorded live with his band — line-up credits <b>Adit (piano)</b>.</p></a>
       <a class="rv" href="https://www.news24bd.tv/details/248611" rel="noopener"><div class="src"><span>News24</span><span>Oct 2025</span></div><h3>Zahid Pritom's new drama — Tawsif &amp; Urbi together for the first time</h3><p>Drama <i>Emon Dine Tare Bola Jay</i> — credits <b>piano: Rizvi Rahman Adit</b>, music arrangement by Sound Hacker.</p></a>
       <a class="rv" href="https://www.tbsnews.net/entertainment/f-minor-releases-new-song" rel="noopener"><div class="src"><span>The Business Standard</span><span>3 Jan 2020</span></div><h3>F-Minor releases new song</h3><p>"Rukhe Darai Nirbhoy" — composed with <b>Rizvi Adit</b>, who was also sound engineer; released under Sound Hacker.</p></a>
       <a class="rv" href="https://www.thedailystar.net/arts-entertainment/news/heartwarming-musical-tribute-humayun-ahmed-1826350" rel="noopener"><div class="src"><span>The Daily Star</span><span>12 Nov 2019</span></div><h3>A heartwarming musical tribute to Humayun Ahmed</h3><p>Sound Hacker's "Kothao Keu Nei", built from the titles of Humayun Ahmed's books.</p></a>
