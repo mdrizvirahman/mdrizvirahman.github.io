@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://mdrizvirahman.com/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://mdrizvirahman.com/md-rizvi-rahman.jpg</image:loc><image:title>Md Rizvi Rahman</image:title></image:image>
     <image:image><image:loc>https://mdrizvirahman.com/photos/rizvi-bio-paris.jpg</image:loc><image:title>Md Rizvi Rahman in Paris</image:title></image:image>
     <image:image><image:loc>https://mdrizvirahman.com/photos/tour-melbourne-2024-4.jpg</image:loc><image:title>Md Rizvi Rahman on keys — Melbourne 2024</image:title></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://mdrizvirahman.com/studio-film-poster.jpg</video:thumbnail_loc>
+      <video:title>Inside the Sound Hacker Studio, Dhaka</video:title>
+      <video:description>A one-minute film inside Sound Hacker, the Dhaka audio production house and recording studio founded by Shariful Islam Ghuddy and Md Rizvi Rahman.</video:description>
+      <video:content_loc>https://mdrizvirahman.com/studio-film.mp4</video:content_loc>
+      <video:duration>59</video:duration>
+    </video:video>
   </url>
 </urlset>
